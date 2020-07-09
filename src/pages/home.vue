@@ -6,22 +6,22 @@
       <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
     </ol>
     <div class="carousel-inner">
-      <div class="item active">
-        <img src="imgs/img2.jpg" class="d-block img-fluid" />
+      <div class="carousel-item active">
+        <img src="img/img2.jpg" class="d-block img-fluid" />
 
-        <div class="caption">
+        <div class="carousel-caption">
           <h5>How To Make A Website</h5>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="imgs/img3.jpg" class="d-block img-fluid" />
-        <div class="caption">
+        <img src="img/img3.jpg" class="d-block img-fluid" />
+        <div class="carousel-caption">
           <h5>Create Responsive Website</h5>
         </div>
       </div>
-      <div class="item">
-        <img src="imgs/img4.jpg" class="d-block img-fluid" />
-        <div class="caption">
+      <div class="carousel-item">
+        <img src="img/img4.jpg" class="d-block img-fluid" />
+        <div class="carousel-caption">
           <h5>Business Website Diesign</h5>
         </div>
       </div>
@@ -56,14 +56,14 @@ export default {};
   width: 100%;
 }
 
-.caption {
+.carousel-caption {
   top: 60%;
   transform: translate(1%);
   bottom: initial !important;
 }
 
-.caption h5 {
-  color: rgba(15, 220, 247, 0.945);
-  font-size: 42px;
+.carousel-caption h5 {
+  color: rgba(0, 0, 0, 0.664);
+  font-size: 32px;
 }
 </style>

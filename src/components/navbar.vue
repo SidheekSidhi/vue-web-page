@@ -74,7 +74,7 @@ export default {
 }
 
 #nav-bar ul li a:hover {
-  color: #007bff !important;
+  color: #09ff00 !important;
 }
 .navbar-toggler {
   border: none !important;
