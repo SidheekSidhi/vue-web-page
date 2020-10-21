@@ -9,7 +9,7 @@
           </li>
           <li>
             <a>
-              <router-link to="/About">ABOUT</router-link>
+              <router-link to="/about">ABOUT</router-link>
             </a>
           </li>
           <li>
@@ -30,7 +30,7 @@ export default {
 
 <style>
 .navbar{
-  width: 100%;
+  width: auto;
   height: 70px;
   background: rgb(38, 71, 87);
   list-style: none;
@@ -41,7 +41,7 @@ export default {
 .navbar ul{
   display: flex;
   position: relative;
-  left: 1000px;
+  left: 900px;
   text-decoration: none;
 }
 ul {
@@ -50,7 +50,7 @@ ul {
 .navbar-items  ul  a{
   display: flex;
   line-height: 55px;
-  font-size: 20px;
+  font-size: 15px;
   color: white;
   text-decoration: none;
   padding-left: 50px;
