@@ -1,87 +1,62 @@
 <template>
   <div class="navbar">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="#">
-        <img src="imgs/img1.jpg" />
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="nav-bar" id="bar">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link">
+      <div class="navbar-items">
+        <ul>
+          <li>
+            <a>
               <router-link to="/">HOME</router-link>
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link">
-              <router-link to="/login">LOGIN</router-link>
+          <li>
+            <a>
+              <router-link to="/About">ABOUT</router-link>
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link">
-              <router-link to="/about">ABOUT</router-link>
+          <li>
+            <a>
+              <router-link to="/login">LOGIN</router-link>
             </a>
           </li>
         </ul>
       </div>
-    </nav>
   </div>
 </template>
 
 <script>
 export default {
-  name: "navbar"
+  name: "Navbar"
 };
 </script>
-<style >
-* {
-  margin: 0px;
-  padding: 0px;
-}
-.navbar {
-  background-color: #ce391f;
-  text-align: center;
-  padding: 10px;
-}
 
-.navbar-light .navbar-brand {
-  height: 50px;
-  width: 55px;
-}
-
-.navbar-brand img {
+<style>
+.navbar{
   width: 100%;
+  height: 70px;
+  background: rgb(38, 71, 87);
+  list-style: none;
 }
-
-.navbar-nav li {
-  padding: 0 10px;
+.navbar-items {
+  display: flex;
 }
-
-.navbar-nav li a {
-  float: right;
-  text-align: left;
+.navbar ul{
+  display: flex;
+  position: relative;
+  left: 1000px;
+  text-decoration: none;
 }
-
-#nav-bar ul li a:hover {
-  color: #09ff00 !important;
+ul {
+  list-style-type: none;
 }
-.navbar-toggler {
-  border: none !important;
+.navbar-items  ul  a{
+  display: flex;
+  line-height: 55px;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  padding-left: 50px;
+  text-align: center;
 }
-
-.nav-link {
-  color: #555 !important;
-  font-weight: 600;
-  font-size: 16px;
+.navbar-items  ul a:hover{
+  color: rgb(108, 178, 190);
 }
+</style>

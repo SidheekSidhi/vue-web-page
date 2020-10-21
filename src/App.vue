@@ -1,25 +1,33 @@
 <template>
   <div id="app">
     <Navbar />
+    <Sidebar />
     <router-view></router-view>
   </div>
 </template>
 
 <script>
-import Navbar from "./components/navbar";
+import Navbar from "./components/Navbar";
+import Sidebar from "./components/Sidebar";
 
 export default {
   name: "App",
   components: {
-    Navbar
+    Navbar,Sidebar
+  },
+  methods:{
+    saveData(e){
+    console.log(e)
+    }
   }
 };
 </script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  text-align: center;
   color: #000000;
   list-style-type: none;
+  padding-top: 0;
+  position: sticky;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container-about">
     <div class="row">
       <div class="col-md-6">
         <h2>About Us</h2>
@@ -35,8 +35,12 @@ export default {};
 </script>
 
 <style>
-#about {
+.container-about{
+  width: 1000px;
+  margin-left: 500px;
   padding-top: 50px;
+}
+#about {
   padding-bottom: 50px;
   color: #555;
 }
@@ -57,7 +61,7 @@ export default {};
 }
 
 .progress-bar {
-  border-radius: 16px;
+  border-radius: 20px;
 }
 
 .progress {
