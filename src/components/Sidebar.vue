@@ -51,7 +51,6 @@ export default {
   font-size: 20px;
   color: white;
   box-sizing: border-box;
-  border-top: 1px soild rgba(255, 255, 255, .1);
   text-decoration: none;
 }
 .sidebar-items  ul a:hover{

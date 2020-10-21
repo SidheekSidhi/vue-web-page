@@ -42,7 +42,7 @@ export default {
   width: 500px;
   height: 400px;
   margin-left: 40%;
-  margin-top: 30px;  
+  margin-top: 50px;  
   padding-top: 50px;
   background-color: rgba(108, 128, 134, 0.767);
   text-align: center;
