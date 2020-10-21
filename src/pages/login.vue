@@ -30,7 +30,7 @@ export default {
       this.username = "";
       this.password = "";
      
-      alert("Added Succesful!");
+      alert("Logged in Succesful!");
       
     }
   },
