@@ -17,6 +17,11 @@
               <router-link to="/login">LOGIN</router-link>
             </a>
           </li>
+          <li>
+            <a>
+              <router-link to="/grid">EMPLOYEES</router-link>
+            </a>
+          </li>
         </ul>
       </div>
   </div>
@@ -41,9 +46,9 @@ export default {
 .navbar ul{
   display: flex;
   position: relative;
-  left: 100%;
+  left: 90px;
   text-decoration: none;
-  margin-left: 100%;
+  margin-left: 95%;
 }
 ul {
   list-style-type: none;
