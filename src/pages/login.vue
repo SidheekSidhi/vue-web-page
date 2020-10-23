@@ -1,5 +1,11 @@
 <template>
   <div class="login-section">
+    <div class="left-section">
+      <img
+        src="imgs/pexels-fauxels-3184325.jpg"
+        style="height: 100%; width: 100%"
+      />
+    </div>
     <div class="login">
       <h2>Login to account</h2>
       <input type="text" v-model="input.username" placeholder="Username" />
@@ -23,8 +29,8 @@ export default {
   methods: {
     login() {
       if (this.input.username == "admin" && this.input.password == "P@55w0rd") {
-          this.$store.commit("setAuthentication", true);
-          this.$router.replace({ name: "home" });
+        this.$store.commit("setAuthentication", true);
+        this.$router.replace({ name: "home" });
       } else {
         console.log("The username and / or password is incorrect");
       }

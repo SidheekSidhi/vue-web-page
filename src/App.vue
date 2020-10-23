@@ -1,14 +1,21 @@
 <template>
   <div id="app">
+    <Nvabar />
+    <Sidebar />
     <router-view></router-view>
   </div>
 </template>
 
 <script>
+import Form from '../components/navbar.vue'
+import Form from '../components/navbar.vue'
+
 
 export default {
   name: "App",
-  components: {},
+  components: {
+    navbar,Sidebar
+  },
 
   methods:{
     saveData(e){
