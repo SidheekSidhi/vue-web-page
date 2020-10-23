@@ -6,7 +6,7 @@
       <th scope="col">CONTRIES</th>
       <th scope="col">NATIVE NAME</th>
       <th scope="col">REGION</th>
-      <th scope="col">CAPITAL</th>
+      <th scope="col">TEST</th>
     </tr>
   </thead>
   <tbody>
