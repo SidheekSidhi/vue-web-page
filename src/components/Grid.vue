@@ -37,7 +37,7 @@ export default {
        }
    },
    mounted(){
-       vue.axios.get('https://restcountries.eu/rest/v2/all')
+       Vue.axios.get('https://restcountries.eu/rest/v2/all')
        .then((response) =>{
            this.list = response.data
            console.warn(response.data);
