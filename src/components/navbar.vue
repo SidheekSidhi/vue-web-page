@@ -46,9 +46,8 @@ export default {
 .navbar ul{
   display: flex;
   position: relative;
-  left: 90px;
   text-decoration: none;
-  margin-left: 95%;
+  margin-left: 100%;
 }
 ul {
   list-style-type: none;
@@ -56,10 +55,10 @@ ul {
 .navbar-items  ul  a{
   display: flex;
   line-height: 55px;
-  font-size: 20px;
+  font-size: 15px;
   color: white;
   text-decoration: none;
-  padding-left: 48px;
+  padding-left: 50px;
   text-align: center;
 }
 .navbar-items  ul a:hover{

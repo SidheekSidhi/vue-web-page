@@ -50,7 +50,7 @@ export default {
 
 <style>
 .grid{
-    width: 40%;
+    width: 70%;
     position: absolute;
     margin-left: 40%;
     margin-top: 5%;
