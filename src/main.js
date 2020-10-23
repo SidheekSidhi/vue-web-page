@@ -4,6 +4,7 @@ import Login from "./pages/login.vue";
 import Home from "./pages/home.vue";
 import About from "./pages/about.vue";
 import VueRouter from "vue-router";
+import Grid from './components/Grid.vue'
 
 Vue.config.productionTip = false;
 
@@ -20,6 +21,10 @@ const routes = [{
     {
         path: "/login",
         component: Login
+    },
+    {
+        path: "/grid",
+        component: Grid
     },
 ];
 
