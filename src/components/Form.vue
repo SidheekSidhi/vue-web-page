@@ -8,6 +8,12 @@
       <label><b>Name :</b></label>
       <input type="text" placeholder= "Name" v-model="model.Name" size="10" name="name">
 
+     <div class="contry">
+        <label><b>Contry :</b></label>
+          <select v-model="model.Name" name="name">
+              <option v-for="item in list" v-bind:key="item.id">{{item.name}}</option>
+          </select>
+     </div>
 
     <div>
       <label><b>Gender :</b></label> <br>
@@ -33,10 +39,17 @@
 </template>
 
 <script>
+import Vue from 'vue'
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+
+Vue.use(VueAxios, axios)
+
 export default {
  name: "Form",
   data(){
     return{
+      list : undefined,
       model:{}
     }
   },
@@ -45,8 +58,15 @@ export default {
       console.log(this.model)
 
       this.$emit('onSave', this.model)
-    },
-  }
+    }
+  },
+     mounted(){
+       Vue.axios.get('https://restcountries.eu/rest/v2/all')
+       .then((response) =>{
+           this.list = response.data
+           console.warn(response.data);
+       })
+   }
 }
 </script>
 
@@ -63,7 +83,7 @@ export default {
   border-top-left-radius: 100px;
   border-bottom-right-radius: 100px; 
 }  
-input[type=text], input[type=password]{  
+input[type=text], input[type=password],select{  
   width: 100%;  
   padding: 10px;  
   margin: 5px 0 22px 0;  
@@ -73,7 +93,7 @@ input[type=text], input[type=password]{
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }  
-input[type=text]:focus, input[type=password]:focus{  
+input[type=text]:focus, input[type=password]:focus,select:focus{  
   background-color: rgb(99, 172, 168);  
   outline: none;  
 }
@@ -98,3 +118,13 @@ hr{
   background-color: rgba(20, 90, 44, 0.671); 
 }  
 </style>
+
+
+
+
+
+
+
+
+
+

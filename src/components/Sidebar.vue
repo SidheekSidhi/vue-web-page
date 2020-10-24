@@ -14,9 +14,14 @@
           </li>
           <li>
             <a>
-              <router-link to="/Login">LOGIN</router-link>
+              <router-link to="/grid">EMPLOYEES</router-link>
             </a>
           </li>
+          <li>
+            <a>
+              <router-link to="/Login">LOGIN</router-link>
+            </a>
+          </li> 
         </ul>
       </div>
   </div>

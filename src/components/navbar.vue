@@ -14,12 +14,12 @@
           </li>
           <li>
             <a>
-              <router-link to="/login">LOGIN</router-link>
+              <router-link to="/grid">EMPLOYEES</router-link>
             </a>
           </li>
           <li>
             <a>
-              <router-link to="/grid">EMPLOYEES</router-link>
+              <router-link to="/login">LOGIN</router-link>
             </a>
           </li>
         </ul>
@@ -40,14 +40,10 @@ export default {
   background: rgb(38, 71, 87);
   list-style: none;
 }
-.navbar-items {
-  display: flex;
-}
 .navbar ul{
   display: flex;
-  position: relative;
   text-decoration: none;
-  margin-left: 100%;
+  margin-left: 950px;
 }
 ul {
   list-style-type: none;
@@ -58,7 +54,7 @@ ul {
   font-size: 15px;
   color: white;
   text-decoration: none;
-  padding-left: 50px;
+  padding-left: 20px;
   text-align: center;
 }
 .navbar-items  ul a:hover{

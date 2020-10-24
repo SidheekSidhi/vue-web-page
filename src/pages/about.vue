@@ -37,7 +37,7 @@ export default {};
 <style>
 .container-about{
   width: 1000px;
-  margin-left: 500px;
+  margin-left: 25%;
   padding-top: 50px;
 }
 #about {
