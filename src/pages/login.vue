@@ -24,7 +24,7 @@ export default {
     login() {
       if (this.input.username == "admin" && this.input.password == "admin") {
           this.$store.commit("setAuthentication", true);
-          this.$router.replace({ name: "welcome" });
+          this.$router.replace({ name: "home" });
       } else {
         //console.log("The username and / or password is incorrect");
       }

@@ -6,7 +6,6 @@ import About from "./pages/about.vue";
 import VueRouter from "vue-router";
 import Grid from "./components/Grid.vue";
 import Vuex from "vuex";
-import Welcome from "./components/Welcome.vue";
 
 Vue.config.productionTip = false;
 
@@ -35,38 +34,48 @@ const routes = [
     path: "/home",
     name: "home",
     component: Home,
+    beforeEnter: (to, from, next) => {   
+        if (store.state.authenticated == false) {
+          next("/login");
+        } else {
+          next();
+        }
+      },
   },
   {
     path: "/about",
     name: "about",
     component: About,
+    beforeEnter: (to, from, next) => {   
+        if (store.state.authenticated == false) {
+          next("/login");
+        } else {
+          next();
+        }
+      },
   },
   {
     path: "/login",
     name: "login",
-    component: Login,
+    component: Login
   },
   {
     path: "/grid",
     name: "grid",
     component: Grid,
-  },
-  {
-    path: "/welcome",
-    name: "welcome",
-    component: Welcome,
     beforeEnter: (to, from, next) => {   
-      if (store.state.authenticated == false) {
-        next("/login");
-      } else {
-        next();
-      }
-    },
+        if (store.state.authenticated == false) {
+          next("/login");
+        } else {
+          next();
+        }
+      },
   }
 ];
 
 const router = new VueRouter({
   mode: "history",
+  base: process.env.BASE_URL,
   routes,
 });
 
