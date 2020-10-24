@@ -1,7 +1,5 @@
 <template>
   <div id="app">
-    <Navbar />
-    <Sidebar />
     <router-view></router-view>
   </div>
 </template>
@@ -12,9 +10,8 @@ import Sidebar from "./components/Sidebar";
 
 export default {
   name: "App",
-  components: {
-    Navbar,Sidebar
-  },
+  components: {},
+
   methods:{
     saveData(e){
     console.log(e)

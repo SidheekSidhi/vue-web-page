@@ -27,6 +27,7 @@ const store = new Vuex.Store(
  
 const routes = [{
         path: "/",
+        name: "home",
         component: Home,
         beforeEnter: (to, from, next) => {
             if(store.state.authenticated == false) {
@@ -38,14 +39,17 @@ const routes = [{
     },
     {
         path: "/about",
+        name: "about",
         component: About
     },
     {
         path: "/login",
+        name: "login",
         component: Login
     },
     {
         path: "/grid",
+        name: "grid",
         component: Grid
     },
 ];
