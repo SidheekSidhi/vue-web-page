@@ -4,7 +4,7 @@
         <ul>
           <li>
             <a>
-              <router-link to="/">HOME</router-link>
+              <router-link to="/home">HOME</router-link>
             </a>
           </li>
           <li>
@@ -15,11 +15,6 @@
           <li>
             <a>
               <router-link to="/grid">EMPLOYEES</router-link>
-            </a>
-          </li>
-          <li>
-            <a>
-              <router-link to="/login">LOGIN</router-link>
             </a>
           </li>
         </ul>
@@ -43,7 +38,7 @@ export default {
 .navbar ul{
   display: flex;
   text-decoration: none;
-  margin-left: 950px;
+  margin-left: 1000px;
 }
 ul {
   list-style-type: none;

@@ -5,7 +5,7 @@
       <input type="text" v-model="input.username" placeholder="Username" />
       <input type="password" v-model="input.password" placeholder="Password" />
       <input type="submit" value="Login" @click="login()" />
-      <p>Dont have an account? <a href="/">SignUp</a></p>
+      <p>Dont have an account? <a href="/home">SignUp</a></p>
     </div>
   </div>
 </template>
@@ -22,11 +22,11 @@ export default {
   },
   methods: {
     login() {
-      if (this.input.username == "admin" && this.input.password == "P@55w0rd") {
-        this.$store.commit("setAuthentication", true);
-        this.$router.replace({ name: "home" });
+      if (this.input.username == "admin" && this.input.password == "admin") {
+          this.$store.commit("setAuthentication", true);
+          this.$router.replace({ name: "welcome" });
       } else {
-        console.log("The username and / or password is incorrect");
+        //console.log("The username and / or password is incorrect");
       }
     },
   },
