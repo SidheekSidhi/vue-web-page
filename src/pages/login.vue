@@ -1,11 +1,5 @@
 <template>
   <div class="login-section">
-    <div class="left-section">
-      <img
-        src="imgs/pexels-fauxels-3184325.jpg"
-        style="height: 100%; width: 100%"
-      />
-    </div>
     <div class="login">
       <h2>Login to account</h2>
       <input type="text" v-model="input.username" placeholder="Username" />
