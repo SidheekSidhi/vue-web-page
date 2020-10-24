@@ -5,8 +5,6 @@
 </template>
 
 <script>
-import Navbar from "./components/navbar";
-import Sidebar from "./components/Sidebar";
 
 export default {
   name: "App",
