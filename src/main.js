@@ -25,8 +25,15 @@ const store = new Vuex.Store(
     }
 );
  
-const routes = [{
-        path: "/",
+const routes = [
+    {
+        path: '/',
+        redirect: {
+            name: "login"
+        }
+    },   
+    {
+        path: "/home",
         name: "home",
         component: Home,
         beforeEnter: (to, from, next) => {
