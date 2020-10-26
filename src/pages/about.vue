@@ -34,7 +34,7 @@
 export default {};
 </script>
 
-<style>
+<style scoped>
 .container-about{
   width: 1000px;
   margin-left: 25%;

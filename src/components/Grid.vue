@@ -48,7 +48,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .grid{
     width: 60%;
     position: absolute;

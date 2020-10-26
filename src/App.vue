@@ -30,6 +30,9 @@ export default {
   color: #000000;
   list-style-type: none;
   padding-top: 0;
-  position: sticky;
 }
+ul {
+  list-style-type: none;
+}
+
 </style>

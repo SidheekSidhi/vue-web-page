@@ -28,21 +28,15 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .sidebar{
   position: fixed;
   left: 0;
   width: 20%;
-  height: 99%;
+  height: 1000px  ;
   background: rgb(38, 102, 131);
-}
-.sidebar-items header{
-  font-size: 20px;
-  color: white;
-  text-align: center;
-  line-height: 70px;
-  background: #07a59d;
-  user-select: none;
+  float: left;
+  
 }
 .sidebar-items  ul a{
   display: block;

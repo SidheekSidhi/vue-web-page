@@ -1,7 +1,7 @@
 <template>
   <div class="navbar">
       <div class="navbar-items">
-        <ul>
+        <ul class="ul">
           <li>
             <a>
               <router-link to="/home">HOME</router-link>
@@ -28,28 +28,27 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .navbar{
   width: 100%;
   height: 1%;
   background: rgb(38, 71, 87);
   list-style: none;
+  /*margin-left: 20%; */
 }
-.navbar ul{
+.ul{
   display: flex;
   text-decoration: none;
-  margin-left: 1000px;
+  margin-left: 900px;
+  
 }
-ul {
-  list-style-type: none;
-}
-.navbar-items  ul  a{
+.ul  a{
   display: flex;
   line-height: 55px;
   font-size: 15px;
   color: white;
   text-decoration: none;
-  padding-left: 20px;
+  padding-left: 40px;
   text-align: center;
 }
 .navbar-items  ul a:hover{
