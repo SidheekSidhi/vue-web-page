@@ -10,7 +10,7 @@
 
      <div class="contry">
         <label><b>Contry :</b></label>
-          <select v-model="model.Name" name="name">
+          <select v-model="model.Name" name="name" placeholder="select your contry">
               <option v-for="item in list" v-bind:key="item.id">{{item.name}}</option>
           </select>
      </div>
